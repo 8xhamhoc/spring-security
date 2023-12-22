@@ -22,7 +22,6 @@ public class ExtraFormLoginFilter extends UsernamePasswordAuthenticationFilter {
         return this.getAuthenticationManager().authenticate(authRequest);
     }
 
-
     private UsernamePasswordAuthenticationToken getAuthRequest(HttpServletRequest request) {
         String username = obtainUsername(request);
         String password = obtainPassword(request);
